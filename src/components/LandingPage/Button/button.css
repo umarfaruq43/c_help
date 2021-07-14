@@ -1,0 +1,87 @@
+.inverse_btn {
+  min-width: 17rem;
+  padding: 1.5rem 2rem;
+  border-radius: 3rem;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  /* background-color: #24ffce; */
+  background-color: rgb(3, 3, 80);
+  color: #fff;
+  /* color: #001b61; */
+  font-size: 1.6rem;
+  height: 5rem;
+  border: 1px solid rgb(3, 3, 80);
+
+  transition: all 0.5s;
+}
+.inverse_btn:hover {
+  background-color: transparent;
+  border: 1px solid #fff;
+}
+
+.normal_btn {
+  width: 17rem;
+  padding: 1.3rem 2rem;
+  border-radius: 3rem;
+  border: 1px solid #fff;
+  color: #fff;
+  background-color: transparent;
+  cursor: pointer;
+  outline: none;
+  font-size: 1.6rem;
+  transition: all 0.5s;
+  height: 5rem;
+}
+.normal_btn:hover {
+  background-color: rgb(3, 3, 80);
+  border: none;
+}
+
+.Community_btn {
+  min-width: 17rem;
+  padding: 1.5rem 2rem;
+  border-radius: 3rem;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  /* background-color: #24ffce; */
+  background-color: rgb(3, 3, 80);
+  color: #fff;
+  /* color: #001b61; */
+  font-size: 1.6rem;
+  height: 5rem;
+  border: 1px solid rgb(3, 3, 80);
+
+  transition: all 0.5s;
+}
+
+.Community_btn:hover {
+  background-color: transparent;
+  border: 1px solid rgb(3, 3, 80);
+  color: rgb(3, 3, 80);
+}
+
+.card_btn {
+  padding: 1.5rem 2rem;
+  margin: 1rem 0;
+  border-radius: 4rem;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  /* background-color: #24ffce; */
+  background-color: rgb(3, 3, 80);
+  color: #fff;
+  /* color: #001b61; */
+  font-size: 1.6rem;
+  height: 5rem;
+  border: 1px solid rgb(3, 3, 80);
+
+  transition: all 0.5s;
+}
+
+.card_btn:hover {
+  background-color: transparent;
+  border: 1px solid #f48e92;
+  color: #f48e92;
+}

@@ -1,0 +1,140 @@
+.l_courses {
+  padding: 8rem 2rem;
+  transition: all 1s;
+  margin: 2rem;
+}
+
+.l_courses_title {
+  font-size: 5rem;
+}
+
+.holder {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 0 6rem;
+}
+
+.l_courses_card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  width: 400px;
+  overflow: hidden;
+  transition: all 1s;
+  margin: 1rem;
+  font-family: "Karla", sans-serif;
+}
+
+.l_courses_title {
+  text-align: center;
+  color: #001b61;
+}
+
+.l_courses_title span {
+  color: #f48e92;
+}
+
+.l_courses_card .course_img {
+  width: 100%;
+  transition: all 1s;
+}
+.l_courses_card:hover .course_img {
+  transform: scale(1.1);
+}
+
+.l_courses_card .course_title {
+  font-size: 2rem;
+  font-family: "Karla", sans-serif;
+  font-weight: 700;
+  display: inline-block;
+  text-decoration: none;
+  color: #04043a;
+  transition: all 1s;
+}
+.l_courses_card:hover .course_title {
+  color: #f48e92;
+}
+
+.l_courses_card .card_details {
+  padding: 0.51rem 2rem;
+  position: relative;
+  color: #04043a;
+  /* overflow: hidden; */
+  transition: all 1s;
+
+  background-color: #fff;
+}
+
+.l_courses_card:hover .card_details {
+  background-color: #04043a;
+}
+
+.l_courses_card .card_tag {
+  display: inline-block;
+  font-weight: 700;
+  padding: 1rem 2rem;
+  background-color: #fff;
+  position: absolute;
+  top: -3rem;
+  right: 2rem;
+  border-radius: 0.71rem 0.71rem 0 0;
+  transition: all 1s;
+
+  /* color: #; */
+}
+.l_courses_card:hover .card_tag {
+  background-color: #04043a;
+  color: #f48e92;
+}
+
+.l_courses_card ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.l_courses_card ul li {
+  list-style-type: none;
+  /* color: ; */
+  display: flex;
+  align-items: center;
+  color: #04043a95;
+
+  transition: all 1s;
+}
+.l_courses_card:hover ul li {
+  color: #f48e92;
+}
+
+.courses_line {
+  border: 1px solid #000e2c64;
+}
+
+.l_courses_card:hover .courses_line {
+  border: 1px solid #f48e92;
+}
+
+@media screen and (max-width: 1110px) {
+  .holder {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0 1rem;
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .holder {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0rem;
+  }
+
+  .l_courses {
+    padding: 5rem 1rem;
+    transition: all 1s;
+    margin: 2rem 0;
+  }
+  .l_courses_title {
+    font-size: 5vw;
+  }
+}

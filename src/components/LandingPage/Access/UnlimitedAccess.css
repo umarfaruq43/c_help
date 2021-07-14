@@ -1,0 +1,135 @@
+.access_page {
+  padding: 10rem 15rem;
+}
+.access_page .access_title {
+  text-align: center;
+}
+.title_1 {
+  margin: 0;
+  font-size: 7rem;
+  color: #001b61;
+}
+
+.title_2 {
+  font-family: "Karla";
+  font-size: 5rem;
+  color: #ff9595;
+  margin-top: 0;
+}
+
+.access_components {
+  display: flex;
+  justify-content: space-evenly;
+  /* background-color: #001b61; */
+}
+.card_box {
+  border: 1px solid rgba(102, 102, 102, 0.322);
+  /* padding: 10rem 0 ; */
+  height: 30rem;
+  position: relative;
+  width: 100%;
+}
+
+.box_content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 20;
+}
+
+.box_icon {
+  font-size: 8rem;
+}
+.box_text {
+  color: #001b61;
+  font-weight: 900;
+}
+
+.card_box::before {
+  /* content: ""; */
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  transform: scale(1);
+  -webkit-transition: all 0.3s ease-out 0s;
+  -moz-transition: all 0.3s ease-out 0s;
+  -ms-transition: all 0.3s ease-out 0s;
+  -o-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
+  background: #fff;
+}
+
+.card_box:hover::before {
+  transform: scale(1.15);
+  background: #001b61;
+  z-index: 10;
+}
+
+.card_box:hover .box_content {
+  transform: translate(-50%, -50%) scale(1.1);
+}
+.card_box:hover .box_icon {
+  color: #fff;
+}
+
+.card_box:hover .box_text {
+  color: #fff;
+}
+
+.red {
+  color: red;
+}
+
+@media screen and (max-width: 1110px) {
+  .title_1 {
+    font-size: 4rem;
+  }
+  .title_2 {
+    font-size: 3rem;
+  }
+  .access_page {
+    padding: 10rem 5rem;
+  }
+  .access_components {
+    display: flex;
+    /* flex-wrap: wrap; */
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .title_1 {
+    font-size: 3rem;
+  }
+  .title_2 {
+    font-size: 2rem;
+  }
+  .access_page {
+    padding: 10rem 2rem;
+  }
+  .card_box {
+    width: 50%;
+  }
+  .access_components {
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .title_1 {
+    font-size: 3rem;
+  }
+  .title_2 {
+    font-size: 2rem;
+  }
+
+  .card_box {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+}

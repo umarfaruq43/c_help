@@ -1,0 +1,48 @@
+.campus {
+  padding: 6rem;
+  margin: 3rem 0;
+  /* height: 60vh; */
+  background-image: linear-gradient(
+      rgba(12, 35, 139, 0.576),
+      rgba(10, 12, 150, 0.542)
+    ),
+    url(../../../image/counter-bg.jpg);
+  background-position: top;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.campus_title {
+  font-weight: 500;
+  font-family: "Karla", sans-serif;
+  color: #fff;
+  text-align: center;
+}
+
+.campus_details {
+  text-align: center;
+  font-family: "Karla", sans-serif;
+  font-size: 4rem;
+}
+.campus_details h1 {
+  margin-top: 0;
+  color: #fff;
+}
+
+.buttons {
+  text-align: center;
+}
+
+@media screen and (max-width: 1110px) {
+  .campus_details {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .campus{
+    padding: 6rem 1rem;
+  }  .campus_details {
+    font-size: 1.5rem;
+  }
+}

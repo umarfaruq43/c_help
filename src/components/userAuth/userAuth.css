@@ -1,0 +1,223 @@
+button {
+  cursor: pointer;
+  outline: none;
+}
+
+.sign_up .row {
+  display: flex;
+  font-size: 1.5rem;
+  /* min-height: 100vh; */
+  background-color: #f9f9f9;
+}
+.sign_up .col {
+  flex: 0 0 50%;
+  min-height: 100vh;
+}
+
+.sign_up .col_1 {
+  /* background-color: gold; */
+  margin-top: -4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem 0;
+}
+.col_2 {
+  /* background-color: blue; */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)),
+    url(../../image/play-thumb.png);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login_bg {
+  /* background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.9)),
+    url(../img/bg.jpg); */
+}
+
+.register {
+  /* background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.9)),
+    url(../img/study.jpg); */
+}
+
+.form_content {
+  flex: 0 0 60%;
+}
+.form_content h1 {
+  color: blue;
+}
+.form_content .form_question {
+  margin: 3rem 0;
+}
+.form_question .sign_up {
+  color: blue;
+  text-decoration: none;
+  display: inline-block;
+  padding-left: 1rem;
+}
+
+.form_group {
+  position: relative;
+  margin-bottom: 1.99rem;
+  /* border: 1px solid red; */
+}
+
+.s_label {
+  position: absolute;
+  top: 50%;
+  left: 1.1rem;
+  transform: translateY(-50%);
+  font-size: 1.5rem;
+  transition: all 0.31s;
+  /* display: none; */
+  cursor: text;
+  opacity: 0;
+}
+.hide_active {
+  position: absolute;
+  top: -0.81rem;
+  left: 1.5rem;
+  background-color: #f9f9f9;
+  padding: 0 0.21rem;
+  transition: all 0.61s;
+  /* display: none; */
+}
+.user_input {
+  width: 100%;
+  height: 5rem;
+  font-size: 1.5rem;
+  padding: 0 1rem;
+  font-family: sans-serif;
+  border-radius: 0.4rem;
+  border: 1px solid #ededed;
+  background-color: #f9f9f9;
+  outline: none;
+}
+
+.submit_btn {
+  width: 100%;
+  height: 5rem;
+  border: none;
+  background-color: blue;
+  color: #fff;
+  font-size: 1.7rem;
+  font-weight: 700;
+  border-radius: 0.4rem;
+  margin: 1.8rem 0;
+  transition: all 0.5s;
+}
+
+.submit_btn:hover {
+  /* background-color: #fff; */
+  /* color: blue; */
+  border: 1px solid blue;
+  transform: translateY(-1rem);
+  box-shadow: 2px 2px 1rem #000;
+}
+.submit_btn:active {
+  transform: translateY(0.7rem);
+
+  box-shadow: 1px 2px 0.8rem #000;
+}
+
+.password_info {
+  color: #9b9b9b;
+  display: inline-block;
+  margin-top: 1rem;
+  font-size: 1.1rem;
+}
+
+.visibilty_toggler {
+  position: absolute;
+  top: 50%;
+  right: 1.1rem;
+  transform: translateY(-50%);
+  font-size: 1.5rem;
+  transition: all 0.5s;
+}
+.eye {
+  font-size: 1.7rem;
+  cursor: pointer;
+  height: 4rem;
+  color: blue;
+  /* background-color:  */
+}
+.link {
+  color: blue;
+  text-decoration: none;
+  display: inline-block;
+  padding: 0 0.5rem;
+}
+.link:hover {
+  text-decoration: underline;
+}
+
+.sign_up_text {
+  flex: 0 0 50%;
+  color: #fff;
+}
+.sign_up_text h1 {
+  margin-bottom: 2rem;
+  font-size: 3rem;
+}
+.sign_up_text p {
+  font-size: 1.7rem;
+}
+
+@media screen and (max-width: 960px) {
+  .form_content {
+    flex: 0 0 85%;
+  }
+  .sign_up .col_1 {
+    flex: 0 0 55%;
+  }
+  .sign_up .col_2 {
+    flex: 0 0 45%;
+  }
+
+  .sign_up_text {
+    flex: 0 0 85%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .sign_up .row {
+    display: block;
+  }
+  .form_content {
+    flex: 0 0 95%;
+  }
+  .sign_up .col {
+    height: auto;
+  }
+  .sign_up .col_1 {
+    margin-top: 0;
+  }
+  .sign_up .col_2 {
+    margin-top: 0;
+    /* order: 0; */
+    display: none;
+  }
+  .sign_up_text {
+    flex: 0 0 85%;
+  }
+  .sign_up .col {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)),
+      url(../../image/play-thumb.png);
+    background-position: center;
+  }
+  .form_content{
+    background-color: rgba(168, 166, 166, 0.617);
+    padding: 2rem;
+
+  }
+  .form_content h1 {
+    color: #fff;
+  }
+  .hide_active{
+    display: none;
+  }
+}
