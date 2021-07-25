@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "./Modal.css";
 import { FaTimes } from "react-icons/fa";
 
 const initialData = {
@@ -9,11 +10,11 @@ const initialData = {
 const department = [
   {
     value: "",
-    label: "-- Select Department--",
+    label: "Select Department",
   },
   {
     value: "MSE",
-    label: "Materal Science and  Engineering",
+    label: "Material Science and  Engineering",
   },
   {
     value: "ECE",
@@ -32,7 +33,7 @@ const department = [
 const Level = [
   {
     value: "",
-    label: "-- Select Level--",
+    label: "Select Level",
   },
   {
     value: "level_one",
@@ -82,13 +83,28 @@ const Modal = () => {
     e.preventDefault();
     console.log(courseConfig);
   };
+
+  const [closeModal, setCloseModal] = useState(false);
+
+  const handleModal = () => {
+    setCloseModal(!closeModal);
+  };
+
   return (
     <>
       <div className="complete_reg">
-        <form action="" onSubmit={handleSubmit}>
-          <div className="btn_close">
+        <form className="userConfig" onSubmit={handleSubmit}>
+          <div className="btn_close" onClick={handleModal}>
             <FaTimes className="close_modal" />
           </div>
+
+          {/* <div className="form_group">
+            <h1>
+              
+            </h1>
+
+          </div> */}
+
           <div className="form_group">
             {/* <label htmlFor="Departmnet">Department</label> */}
             <select

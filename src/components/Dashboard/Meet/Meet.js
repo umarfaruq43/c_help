@@ -4,6 +4,8 @@ import "./Meet.css";
 import user from "../../../image/user1.jpg";
 import { Link } from "react-router-dom";
 import { FaPhone, FaSms, FaWhatsapp } from "react-icons/fa";
+import {  BiPhoneCall } from "react-icons/bi";
+
 
 const Meet = ({ name, image, title, number }) => {
   return (
@@ -46,7 +48,7 @@ const Meet = ({ name, image, title, number }) => {
               alt="User Contact"
               className="contact_user"
             >
-              <FaPhone className="meet_icon" />
+              <BiPhoneCall className="meet_icon" />
             </a>
           </div>
         </div>

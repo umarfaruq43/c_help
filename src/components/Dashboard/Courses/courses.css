@@ -2,6 +2,10 @@
   padding: 0 2rem;
 }
 
+.course_indicator {
+  padding-left: 3rem;
+}
+
 .course {
   display: flex;
   justify-content: space-evenly;
@@ -23,11 +27,12 @@
 .course_content:hover {
   transform: scale(1.05);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-
 }
 
 .course_code {
   font-size: 3rem;
+  color: #030350;
+
 }
 .course_title {
   margin-top: 0.2rem;
@@ -84,6 +89,7 @@
   align-items: center;
   justify-content: space-between;
   padding: 1rem 0;
+  transition: all 0.6s;
 }
 
 .resources a {
@@ -91,9 +97,11 @@
   width: 100%;
   text-decoration: none;
   color: blue;
+  font-weight: bold;
 }
 .resources a:hover {
-  background-color: blue;
+  /* background-color: blue; */
+  color: #f16001;
 }
 
 @media screen and (max-width: 1100px) {

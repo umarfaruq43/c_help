@@ -38,12 +38,54 @@ const CourseData = [
     courseDetails:
       "Introduction to Polymers is the Lorem ipsum dolor sit amet consectetur,  adipisicing elit. Voluptatum ... ",
   },
+  {
+    courseCode: "Get 207",
+    courseTitle: "Introduction to Polymers",
+    courseDetails:
+      "Introduction to Polymers is the Lorem ipsum dolor sit amet consectetur,  adipisicing elit. Voluptatum ... ",
+  },
+  {
+    courseCode: "Get 207",
+    courseTitle: "Introduction to Polymers",
+    courseDetails:
+      "Introduction to Polymers is the Lorem ipsum dolor sit amet consectetur,  adipisicing elit. Voluptatum ... ",
+  },
+  {
+    courseCode: "Get 207",
+    courseTitle: "Introduction to Polymers",
+    courseDetails:
+      "Introduction to Polymers is the Lorem ipsum dolor sit amet consectetur,  adipisicing elit. Voluptatum ... ",
+  },
+  {
+    courseCode: "Get 207",
+    courseTitle: "Introduction to Polymers",
+    courseDetails:
+      "Introduction to Polymers is the Lorem ipsum dolor sit amet consectetur,  adipisicing elit. Voluptatum ... ",
+  },
+  {
+    courseCode: "Get 207",
+    courseTitle: "Introduction to Polymers",
+    courseDetails:
+      "Introduction to Polymers is the Lorem ipsum dolor sit amet consectetur,  adipisicing elit. Voluptatum ... ",
+  },
+  {
+    courseCode: "Get 207",
+    courseTitle: "Introduction to Polymers",
+    courseDetails:
+      "Introduction to Polymers is the Lorem ipsum dolor sit amet consectetur,  adipisicing elit. Voluptatum ... ",
+  },
+  {
+    courseCode: "Get 207",
+    courseTitle: "Introduction to Polymers",
+    courseDetails:
+      "Introduction to Polymers is the Lorem ipsum dolor sit amet consectetur,  adipisicing elit. Voluptatum ... ",
+  },
 ];
 
 const Courses = () => {
   return (
-    <div className="Dasboard">
-      <h1>My course</h1>
+    <div className="">
+      <h1 className="course_indicator" >My course</h1>
 
       <div className="course">
         {CourseData.map((course) => (

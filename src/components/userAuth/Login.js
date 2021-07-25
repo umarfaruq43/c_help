@@ -102,9 +102,11 @@ const Login = ({ setToken }) => {
                 </span>
               </p>
 
-              <button className="submit_btn" type="submit">
-                Login
-              </button>
+              <a href="/dashboard">
+                <button className="submit_btn" type="submit">
+                  Login
+                </button>
+              </a>
               <p>
                 Forgotten password? Click
                 <a href="/forgetPassword" className="link">
@@ -119,8 +121,8 @@ const Login = ({ setToken }) => {
             <h1> Campus Help </h1>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima
-              perspiciatis eos dignissimos similique commodi! Alias? Minima
-              perspiciatis eos dignissimos similique commodi! Alias? Minima
+              perspiciatis eos dignissimos similitude commodi! Alias? Minima
+              perspiciatis eos dignissimos similitude commodi! Alias? Minima
               perspiciatis eos dignissimos similique commodi! Alias?
             </p>
           </div>

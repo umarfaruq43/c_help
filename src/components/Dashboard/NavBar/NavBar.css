@@ -1,6 +1,9 @@
 .nav_container {
   display: flex;
-  position: relative;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  z-index: 200;
 }
 
 .dashboard_logo {
@@ -16,7 +19,7 @@
 /* .nav_toggler {
   font-size: 3rem;
   color: #f4f4f4; */
-  /* align-self: flex-end; */
+/* align-self: flex-end; */
 /* } */
 
 .sideNav {
@@ -37,7 +40,7 @@
 .sideNav_link {
   display: inline-block;
   width: 100%;
-  margin: 2rem 0;
+  margin: 1rem 0;
   padding: 1rem 2rem;
   cursor: pointer;
   display: flex;
@@ -68,10 +71,6 @@
 
 .end {
   margin-top: auto;
-}
-
-.content_section {
-  width: 100%;
 }
 
 .topNav {
@@ -119,7 +118,7 @@
   border-radius: 3.1rem;
   padding-left: 22rem;
   /* padding-top: 10rem; */
-  margin-top: 6rem;
+  margin-top: 9rem;
 }
 
 @media screen and (max-width: 1100px) {
@@ -133,12 +132,14 @@
 
 @media screen and (max-width: 700px) {
   .sideNav.active {
-    position: absolute;
-    left: 0rem;
+    position: fixed;
+    bottom: 0;
+    left: -1rem;
     transition: all 0.6s;
     flex-direction: column;
     z-index: 500;
     width: 22rem;
+    /* background-color: red; */
   }
   .topNav {
     margin-left: 0;
@@ -149,10 +150,11 @@
   }
 
   .sideNav {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: -30rem;
     transition: all 0.6s;
+    bottom: 0;
   }
   .close_icon {
     display: block;
@@ -160,9 +162,7 @@
 
   /* COMPLETE REGISTRATION STYLE  */
 
-  .complete_reg form {
-    width: 90%;
-  }
+
 
   .other_page {
     padding: 1rem;
@@ -172,6 +172,10 @@
 @media screen and (max-width: 400px) {
   .sideNav {
     width: 22rem;
+  }
+  .sideNav_link {
+    
+    margin: 1rem 0;
   }
   .sideNav.active {
     position: absolute;

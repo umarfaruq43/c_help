@@ -7,12 +7,32 @@ import SignUp from "./components/userAuth/SignUp";
 import Login from "./components/userAuth/Login";
 import Dashboard from "./components/Dashboard/Dashboard";
 import NullPage from "./components/LandingPage/Nullpage/NullPage";
+
+function setToken(userToken) {
+  localStorage.setItem("token", JSON.stringify(userToken));
+}
+
+// function getToken() {
+//   const token = localStorage.getItem("token");
+//   const mainToken = JSON.stringify(token);
+//   console.log(mainToken);
+//   return mainToken?.token;
+// }
+
 const App = () => {
   const [token, setToken] = useState();
+  // const token = getToken();
 
-  if (!token) {
-    return <Login setToken={setToken} />;
+  function getToken() {
+    const token = localStorage.getItem("token");
+    const mainToken = JSON.stringify(token);
+    console.log(mainToken);
+    setToken(mainToken?.token);
   }
+
+  // if (!token) {
+  //   return <Login setToken={setToken} />;
+  // }
 
   return (
     <Router>

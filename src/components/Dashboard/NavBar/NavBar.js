@@ -1,17 +1,15 @@
-import React, { useState } from "react";
-import Meets from "../Meet/Meets";
-import Modal from "../Modal";
-import Courses from "../Courses/Courses";
+import React from "react";
+
 import "./NavBar.css";
 
+import { AiFillCarryOut } from "react-icons/ai";
+import { BiLogOut } from "react-icons/bi";
+import { FiSettings } from "react-icons/fi";
 import {
-  FaBars,
   FaBookReader,
+  FaGraduationCap,
   FaHome,
-  FaQuestionCircle,
-  FaTable,
   FaTimes,
-  FaUserAlt,
   FaUserFriends,
 } from "react-icons/fa";
 
@@ -21,6 +19,10 @@ const NavBar = ({ navRes, setNavRes }) => {
   };
   const handleCloseNav = () => {
     setNavRes(false);
+  };
+
+  const handleLogOut = () => {
+    localStorage.removeItem("token");
   };
 
   return (
@@ -40,45 +42,32 @@ const NavBar = ({ navRes, setNavRes }) => {
             <FaHome className="dash_icon" /> <span>Dashboard</span>
           </div>
 
+          <div className="sideNav_link">
+            <FaGraduationCap className="dash_icon" /> <span> My Courses </span>
+          </div>
+
           <div className="sideNav_link" onClick={handleCloseNav}>
-            <FaUserFriends className="dash_icon" /> <span>Dashboard</span>
+            <FaUserFriends className="dash_icon" /> <span>Meet Others</span>
           </div>
 
           <div className="sideNav_link">
-            <FaTable className="dash_icon" /> <span>Dashboard</span>
+            <AiFillCarryOut className="dash_icon" /> <span> Schedule </span>
           </div>
 
           <div className="sideNav_link">
-            <FaBookReader className="dash_icon" /> <span>Dashboard</span>
+            <FaBookReader className="dash_icon" /> <span>Resources</span>
           </div>
 
           <div className="end">
             <div className="sideNav_link">
-              <FaQuestionCircle className="dash_icon" />
+              <FiSettings className="dash_icon" /> <span>Settings</span>
+            </div>
+
+            <div className="sideNav_link" onClick={handleLogOut}>
+              <BiLogOut className="dash_icon" /> <span>Logout</span>
             </div>
           </div>
         </div>
-
-        <aside className="content_section">
-          {/* <div className="topNav">
-            <div className="topNav_link" onClick={handleNavRes}>
-              <FaBars
-                className={navRes ? " topNav_icon " : "topNav_icon active"}
-              />
-            </div>
-            <a href="/" className="topNav_link">
-              <FaUserAlt className="topNav_icon" />
-            </a>
-          </div> */}
-
-          {/* <div className="other_page" onClick={handleCloseNav}> */}
-          {/* {meet ? <Meet /> : ""} */}
-          {/* {table ? <TimeTable /> : ""} */}
-          {/* <Courses /> */}
-          {/* <Meets /> */}
-          {/* <Modal /> */}
-          {/* </div> */}
-        </aside>
       </div>
     </>
   );
