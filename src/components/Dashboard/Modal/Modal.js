@@ -81,7 +81,6 @@ const Modal = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(courseConfig);
   };
 
   const [closeModal, setCloseModal] = useState(false);

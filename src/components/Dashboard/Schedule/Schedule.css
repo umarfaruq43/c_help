@@ -1,7 +1,167 @@
+.schedule_layer {
+  background-color: rgba(0, 0, 0, 0.774);
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  -webkit-animation-name: fadeIn; /* Fade in the background */
+  -webkit-animation-duration: 0.4s;
+  animation-name: slideIn;
+  animation-duration: 0.4s;
+}
+
+@keyframes slideIn {
+  from {
+    left: -300rem;
+    opacity: 0;
+  }
+  to {
+    left: 0;
+    opacity: 1;
+  }
+}
+
+.schedule_close {
+  position: absolute;
+  top: 1rem;
+  right: 1.5rem;
+  cursor: pointer;
+  font-size: 2.5rem;
+  color: #ff5e00;
+}
+.schedule_adder {
+  width: 40rem;
+  background-color: #2f343f;
+  padding: 2rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 1.8rem;
+  font-family: "Karla", sans-serif;
+}
+.form_group h1 {
+  color: #fff;
+  font-size: 2.5rem;
+}
+
+.form_group .title {
+  outline: none;
+  border: none;
+  background-color: transparent;
+  border-bottom: 1px solid #fff;
+  width: 100%;
+  font-size: 2.5rem;
+  color: #fff;
+}
+
+.form_group .text_describtion {
+  width: 100%;
+  border: none;
+  outline: none;
+  color: #fff;
+  background-color: transparent;
+  font-size: 1.6rem;
+  border-bottom: 1px solid #fff;
+  max-width: 100%;
+}
+.config_todo {
+  display: flex;
+  justify-content: space-between;
+}
+
+.config_todo button {
+  padding: 1rem;
+  font-weight: 700;
+  width: 11rem;
+  background-color: rgb(19, 19, 19);
+  border: none;
+  color: #ff5e00;
+  border-radius: 0.61rem;
+  box-shadow: 0.8px 1px 2px rgb(94, 89, 89);
+}
+
+.form_group .text_space {
+  margin-top: 5rem;
+}
+
+.newS {
+  display: inline;
+  width: 30%;
+  height: 20rem;
+  background-color: #ff5e00;
+  margin: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.newS:hover {
+  box-shadow: 0px 0px 5px #000;
+  transform: scale(1.01);
+}
+.newS:hover .newS_circle {
+  transform: scale(1.01);
+}
+.newS_circle {
+  width: 10rem;
+  height: 10rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.5s;
+  border: 3px solid #001b61;
+  border-radius: 100%;
+  font-size: 3rem;
+}
+
 .todo {
   width: 30%;
   min-width: 30rem;
-  background-color: gold;
+  background-color: #ff5e00;
   padding: 2rem;
-  margin: 2rem;
+  margin: 1rem;
+}
+.allTodos {
+  display: flex;
+  flex-wrap: wrap;
+  /* justify-content: space-evenly; */
+}
+
+@media screen and (max-width: 1150px) {
+  .todo {
+    width: 40%;
+    min-width: 25rem;
+  }
+  .allTodos {
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}
+
+@media screen and (max-width: 1137px) {
+  .todo {
+    width: 45%;
+    min-width: 25rem;
+  }
+  .newS {
+    width: 45%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .todo {
+    width: 100%;
+    min-width: 25rem;
+    margin: 1rem 0;
+  }
+  .newS {
+    width: 100%;
+    margin: 1rem 0;
+  }
+  .schedule_adder {
+    width: 90%;
+  }
 }

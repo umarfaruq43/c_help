@@ -8,7 +8,6 @@ const Navbar = () => {
 
   const handleNavToggler = () => {
     setNavToggler(!navToggler);
-    console.log(prevScroll);
   };
 
   return (

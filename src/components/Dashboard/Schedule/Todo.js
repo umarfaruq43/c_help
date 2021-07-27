@@ -7,8 +7,9 @@ const Todo = ({
   id,
   setTodos,
   allTodo,
+  goalDate,
+  goalTime,
 }) => {
-  console.log(allTodo);
   const handleDelete = (e) => {
     setTodos(allTodo.filter((loopedTodo) => loopedTodo.id != currentTodo.id));
   };
@@ -17,6 +18,8 @@ const Todo = ({
     <div className="todo" key={id}>
       <h1>{todoTitle}</h1>
       <p>{todoDescribtion}</p>
+      <p>{goalDate}</p>
+      <p>{goalTime}</p>
 
       <button onClick={handleDelete}> delete </button>
     </div>

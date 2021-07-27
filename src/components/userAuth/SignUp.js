@@ -28,7 +28,6 @@ const SignUp = () => {
   // handle Submit handles the user details on submit.
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(userData);
   };
   const { fullName, password, email } = userData;
   return (
