@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Todo from "./Todo";
 import Todos from "./Todos";
-import Form from "./Form";
 import "./Schedule.css";
 import { FaTimes } from "react-icons/fa";
 import { BiPlusMedical } from "react-icons/bi";
@@ -15,7 +14,7 @@ const Schedule = () => {
 
   const [todo, setTodo] = useState(todoInitials);
   const [todos, setTodos] = useState([]);
-  const [newSchedule, setNewSchedule] = useState(false);
+  const [newSchedule, setNewSchedule] = useState(true);
 
   // saving todos to the local storage
 
@@ -45,18 +44,18 @@ const Schedule = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (todo.title != "" && todo.describtion != "") {
-      setTodos([
-        ...todos,
-        {
-          todoTitle: todo.title,
-          todoDescribtion: todo.describtion,
-          id: new Date(),
-          goalTime: todo.time,
-          goalDate: todo.date,
-        },
-      ]);
-    }
+    // if (todo.title != "" && todo.describtion != "") {
+    setTodos([
+      ...todos,
+      {
+        todoTitle: todo.title,
+        todoDescribtion: todo.describtion,
+        id: new Date(),
+        goalTime: todo.time,
+        goalDate: todo.date,
+      },
+    ]);
+    // }
 
     setNewSchedule(false);
   };
@@ -99,15 +98,26 @@ const Schedule = () => {
                     onChange={handleChange}
                     placeholder="Your Schedule"
                     className="text_describtion"
-                    rows="5"
+                    rows="2"
                   ></textarea>
                 </p>
                 <p>
-                  <input type="date" name="date" onChange={handleChange} />
+                  {/* <h3>Date</h3> */}
+                  <input
+                    type="date"
+                    name="date"
+                    className="date"
+                    onChange={handleChange}
+                  />
+                </p>
+                <p>
+                  {/* <h3>Time</h3> */}
+
                   <input
                     type="time"
                     name="time"
                     id=""
+                    className="date"
                     onChange={handleChange}
                   />
                 </p>
